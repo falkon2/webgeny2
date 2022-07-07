@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Gen</title>
+    <link rel="stylesheet" type="text/css" href="{{css_path}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+{% block content %}
+<body>
+    <header>
+        <div class="main">
+            <ul>
+                <li class="active"><a href=>Home</a></li>
+                <li><a href="{{youtube}}">Blogs</a></li>
+                <link rel="stylesheet" href="css/style.css">
+                <li><a href="mailto:{{email}}">Contact me</a></li>
+                
+            </ul>
+        </header>
+        </div>
+        <div class="title">
+        <h1>hello I'm {{name}}</h1>
+        </div>
+        <main>
+        <p>Greetings, I am {{name}}. I'm a {{profession}} from {{country}}. I love {{hobby}}, Make sure to check out my blogs!</p>
+        <div>
+        </main>
+    </div>
+</body>
+{% endblock %}
+</html>

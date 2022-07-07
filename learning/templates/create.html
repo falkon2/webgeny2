@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='css/create.css')}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Details</div>
+      <div class="content">
+        <form action="{{ url_for('theme')}}" method="POST">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                class="form-control"
+                aria-describedby="Name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="email">Email</span>
+              <input
+                type="text"
+                name="email"
+                placeholder="Enter your email"
+                required
+                aria-describedby="Email"
+                class="form-control"
+              />
+            </div>
+            <div class="input-box">
+              <span class="profession">Profession</span>
+              <input
+                type="text"
+                name="profession"
+                placeholder="Enter your profession"
+                required
+                class = "form-control"
+              />
+            </div>
+            <div class="input-box">
+              <span class="country">Country</span>
+              <input
+                type="text"
+                name="country"
+                placeholder="The country you live in"
+                required
+                class="form-control"
+              />
+            </div>
+            <div class="input-box">
+              <span class="hobby">Hobby</span>
+              <input
+                type="text"
+                name="hobby"
+                placeholder="What do you like?"
+                required
+                class="form-control"
+              />
+            </div>
+            <div class="input-box">
+              <span class="Phone_no.">Youtube channel</span>
+              <input
+                type="text"
+                name = "youtube"
+                class="form-control"
+                placeholder="Enter your youtube channel link"
+              />
+            </div>
+          </div>
+        </div>
+          <div class="button">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

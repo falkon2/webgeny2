@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/theme_select.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+		<div class="main">
+			<div class="logo">
+				<img src="css/img/logo.jpg">
+			</div>
+			<ul>
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="#">About Me</a></li>
+				<li><a href="#">How to host a website</a></li>
+				<li><a href="">Tutorial</a></li>
+			</ul>
+		</div>
+    </header>
+    <main>
+		<div class="title">
+			<h1>Select Your Theme</h1>
+		</div>
+        <div class="black_theme_text">
+            <a href="{{ url_for('result')}}"><p>Black Theme</p></a>
+        </div>
+        <div class="blue_theme_text">
+            <a href="../blue_theme/index.html"><p>Blue Theme</p></a>
+        </div>
+        <div class="red_theme_text">
+            <a href="../red_theme/index.html"><p>Red Theme</p></a>
+        </div>
+        
+
+        <div class="blue_theme">
+            <a href="blue_theme_download.html">
+                <img src="../static/css/img/blue_bg.jpg">
+            </a>
+        </div>
+        <div class="red_theme">
+            <a href="https://google.com">
+                <img src="../static/css/img/red_bg.jpg">
+            </a>
+        </div>
+        <div class="black_theme">
+            <a href="/info/themes/black">
+                <img src="../static/css/img/black_bg.jpg">
+            </a>
+        </div>
+        
+    
+
+        <a href="more_option.html" class="btn1">Next</a>
+    </main>
+</body>
+</html>
